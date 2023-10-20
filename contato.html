@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <header class="cabecalho" >
-        <h1 class="cabecalho__nome"><strong class="destaque-titulo">&lt</strong> Marcos Padilha Pires <strong class="destaque-titulo">&gt</strong></h1>
-        <nav class="cabecalho__menu">
-          <a class="cabecalho__menu__link" href="index.html">
-            Home
-          </a>
-          <a class="cabecalho__menu__link" href="about.html">
-            Sobre mim
-          </a>
-          <a  class= "cabecalho__menu__link" href="curriculo.html">
-            Currículo
-          </a>
-        </nav>
-        <a class="cabecalho__menu__link__contato" href="contato.html">
-            Contato
-        </a>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contato</title>
+      <link rel="stylesheet" href="./styles/style.css">
+   </head>
+   <body>
+      <header class="cabecalho" >
+         <h1 class="cabecalho__nome"><strong class="destaque-titulo">&lt</strong> Marcos Padilha Pires <strong class="destaque-titulo">&gt</strong></h1>
+         <nav class="cabecalho__nav">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label__menu">
+            <img src="/assets/menu.png" alt="menu" class="cabecalho__label__menu__abrir" >
+            </label>
+            <ul class="cabecalho__menu">
+               <a class="cabecalho__menu__link" href="index.html">
+               Home
+               </a>
+               <a class="cabecalho__menu__link" href="about.html">
+               Sobre mim
+               </a>
+               <a  class= "cabecalho__menu__link" href="curriculo.html">
+               Currículo
+               </a>
+            </ul>
+         </nav>
+         <a class="cabecalho__menu__link__contato" href="contato.html">
+         Contato
+         </a>
       </header>
-      <main class="apresentacao">
-            <div class="apresentacao__conteudo__contato">
-                <h1 class="apresentacao__conteudo__contato__titulo">Vamos conversar, conte-me sobre seu projeto</h1>
-                <h3 class="apresentacao__conteudo__contato__subtitulo">Vamos criar algo juntos &#129305</h3>
-                <div class="apresentacao__conteudo__contato__centralizar">
-                    <div class="apresentacao__conteudo__contato__email">
-                        <img src="/assets/email.png" alt="email" width="42">
-                        <div> 
-                            <h3>Enviar para</h3>
-                            <h2 class="apresentacao__conteudo__font__destaque">marcospadilhapires@gmail.com</h2>
-                        </div>
-                    </div>
-                </div>
+      <main class="apresentacao__contato">
+         <div class="apresentacao__conteudo__contato">
+            <h1 class="apresentacao__conteudo__contato__titulo">Vamos conversar, conte-me sobre seu projeto</h1>
+            <h3 class="apresentacao__conteudo__contato__subtitulo">Vamos criar algo juntos &#129305</h3>
+            <div class="apresentacao__conteudo__contato__centralizar">
+               <div class="apresentacao__conteudo__contato__email">
+                  <img src="/assets/email.png" alt="email" width="42">
+                  <div>
+                     <h3>Enviar para</h3>
+                     <h2 class="apresentacao__conteudo__font__destaque">marcospadilhapires@gmail.com</h2>
+                  </div>
+               </div>
             </div>
-            <div class="apresentacao__conteudo__contato">
-                <form class="apresentacao__conteudo__forms">
-                    <h2 class="apresentacao__conteudo__forms__titulo">Envie-me uma mensagem🚀</h2>
-                    <input type="text" placeholder="Nome Completo*" class="apresentacao__conteudo__contato__input">
-                    <input type="email" placeholder="Endereço de email*"class="apresentacao__conteudo__contato__input">
-                    <input type="text" placeholder="Assunto"class="apresentacao__conteudo__contato__input">
-                    <div class="apresentacao__conteudo__forms__msg">
-                        <h3 class="apresentacao__conteudo__forms__fonte">Fale-me sobre seu projeto</h3>
-                        <textarea cols="30" rows="6"class="apresentacao__conteudo__contato__input"></textarea>
-                        <button class="apresentacao__conteudo__forms__botao">Enviar mensagem</button>
-                    </div>
-                </form>
-            </div>
+         </div>
+         <div class="apresentacao__conteudo__contato">
+            <form class="apresentacao__conteudo__forms">
+               <h2 class="apresentacao__conteudo__forms__titulo">Envie-me uma mensagem🚀</h2>
+               <input type="text" placeholder="Nome Completo*" class="apresentacao__conteudo__contato__input">
+               <input type="email" placeholder="Endereço de email*"class="apresentacao__conteudo__contato__input">
+               <input type="text" placeholder="Assunto"class="apresentacao__conteudo__contato__input">
+               <div class="apresentacao__conteudo__forms__msg">
+                  <h3 class="apresentacao__conteudo__forms__fonte">Fale-me sobre seu projeto</h3>
+                  <textarea cols="30" rows="6"class="apresentacao__conteudo__contato__input"></textarea>
+                  <button class="apresentacao__conteudo__forms__botao">Enviar mensagem</button>
+               </div>
+            </form>
+         </div>
       </main>
       <footer class="rodape">
-        <p>Desenvolvido por Marcos P.Pires &copy</p>
-    </footer>
-</body>
+         <p>Desenvolvido por Marcos P.Pires &copy</p>
+      </footer>
+   </body>
 </html>

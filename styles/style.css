@@ -85,9 +85,13 @@
  .cabecalho__nav{
      margin: 0 auto;
 }
- .cabecalho__menu{
-     display: flex;
-     gap: 80px;
+
+.cabecalho__checkbox, .cabecalho__checkbox__label__menu{
+    display: none;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
 }
  .cabecalho__menu__link{
      text-decoration: none;
@@ -96,9 +100,10 @@
      font-weight: 400;
      color: var(--cor-cabecalho-texto);
 }
- .label__menu, .checkbox{
-     display: none;
+.cabecalho__menu__link:hover{
+    color: var(--cor-tercearia);
 }
+ 
  .cabecalho__menu__link__contato{
      text-decoration: none;
      font-size:1.12rem ;
@@ -111,9 +116,6 @@
      right: 0%;
      margin-right: 2%;
      position: absolute;
-}
- .cabecalho__menu__link:hover{
-     color: var(--cor-tercearia);
 }
  .apresentacao{
      padding: 8% 15%;
@@ -500,17 +502,17 @@
      .cabecalho__nav{
          margin: 0 auto 0 90%;
     }
-     .label__menu{
+     .cabecalho__checkbox__label__menu{
          display: flex;
          align-items: center;
          gap: 0.5rem;
          padding-block: 1rem;
          cursor: pointer;
     }
-     .label__menu img{
+     .cabecalho__checkbox__label__menu img{
          width: 2rem;
     }
-     .checkbox:checked ~ .cabecalho__menu{
+     .cabecalho__checkbox:checked ~ .cabecalho__menu{
          height: calc(100vh - 2.25rem);
          visibility: visible;
          overflow-y: auto;

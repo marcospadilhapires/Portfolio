@@ -199,7 +199,7 @@
 .apresentacao__imagem{
     border: 4px solid var(--cor-tercearia);
     border-radius: 50%;
-    width: 40%;
+    width: 50%;
 }
 
 /* Página Sobre-mim */
@@ -239,7 +239,22 @@
    padding: 3% 0;
 }
 
-.apresentacao__sobre__conhecimento__conteudo{
+
+.apresentacao__sobre__conhecimento__experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1%;
+}
+
+.apresentacao__sobre__conhecimento__formacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1%;
+}
+
+.apresentacao__sobre__conhecimento__habilidades{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -260,7 +275,11 @@
     font-weight:700 
 }
 
-.apresentacao__sobre__conhecimento__conteudo__funcao{
+.apresentacao__sobre__conhecimento__conteudo__funcoes{
+    display: flex;
+    flex-direction: column;
+}
+.apresentacao__sobre__conhecimento__conteudo__funcoes__funcao{
     padding: 10px;
     line-height: 1.5rem;
 }
@@ -341,7 +360,7 @@
      justify-content: center;
      align-items: center;
      gap: 20px;
-     background-color:#070707;
+     background-color:#0f0e0e;
      width: 80%;
      padding: 3% 2%;
      border-radius: 8px;
@@ -436,30 +455,81 @@
         padding:15% 8%;
    }
    .apresentacao__contato__conteudo{
-        align-items: center;
+        
    }
     .apresentacao__contato__conteudo__titulo{
         font-size:2.80rem ;
    }
+
+   .apresentacao__contato__conteudo__div{
+        width: 60%;
+   }
+
    
+   .apresentacao__contato__conteudo__div__email{
+        margin-top: 4%;
+        justify-content: center;
+   }
    .apresentacao__contato__conteudo__forms{
         width: 90%;
+   }
+   .apresentacao__sobre{
+        width: 100%;
    }
 
    .apresentacao__sobre__conteudo{
         flex-direction: column-reverse;
-        padding:15% 8% 10% 8%; 
-        align-items: center;
+        padding:15% 8% 10% 8%;
+        align-items: center; 
+     
    }
    .apresentacao__sobre__conteudo__texto{
         width: auto;
    }
 
    .apresentacao__sobre__conhecimento{
-        padding:3% 8% 4% 8%;
-        
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
    }
-   .apresentacao__sobre__conhecimento__conteudo{
+
+   .apresentacao__sobre__conhecimento__experiencia{
+        gap: 0;
+        width: 83vw;
+   }
+
+   .apresentacao__sobre__conhecimento__conteudo__titulo{
+        padding-bottom: 10px;
+   }
+
+   .apresentacao__sobre__conhecimento__formacao{
+        width: 83vw;
+        padding-top: 0;
+        gap: 10px;
+   }
+
+   .apresentacao__sobre__conhecimento__habilidades{
+        width: 83vw;
+        padding-top: 0;
+        gap: 0;
+   }
+
+   .apresentacao__sobre__conhecimento__lista{
+        flex-direction: row;
+        padding-top: 1%;
+        gap: 40px;
+        padding-bottom: 1% ;
+
+
+   }
+
+   .apresentacao__sobre__conhecimento__conteudo__hr{
+
+   }
+
+   .apresentacao__sobre__conhecimento__conteudo__funcoes{
+        flex-direction: row;
+        gap: 40px;
    }
       
 }
@@ -476,7 +546,7 @@
         height: 100%;
    }
 }
-@media (max-width:900px){
+@media (max-width:1000px){
     
    .cabecalho__nome{
         font-size: 0.90rem;
@@ -530,6 +600,53 @@
         margin-right: 15%;
         font-size: 0.90rem;
    }
+   .apresentacao__contato__conteudo__div{
+    width: 80%;
+}
+
+}
+
+@media (max-width:700px){
+    .apresentacao__sobre__conhecimento__experiencia{
+        align-items: center;
+   }
+   .apresentacao__sobre__conhecimento__formacao{
+        align-items: center;
+   }
+   .apresentacao__sobre__conhecimento__habilidades{
+        align-items: center;
+   }
+
+   .apresentacao__sobre__conhecimento__conteudo__funcoes {
+        flex-direction: column;
+        margin-right: auto;
+       
+   }
+   .apresentacao__sobre__conhecimento__lista{
+        flex-wrap: wrap;
+        justify-content:  space-between;
+        margin: 0 auto;
+
+   }
+
+   .apresentacao__sobre__conhecimento__lista__elemento{
+        
+   }
+
+   .apresentacao__sobre__conhecimento__conteudo__titulo{
+        margin-right: auto;
+   }
+   .apresentacao__sobre__conhecimento__conteudo__hr{
+        width: 100%;
+   }
+   .apresentacao__contato__conteudo__div{
+        width: 100%;
+   }
+
+    .apresentacao__contato__conteudo__div__email{
+        font-size: 0.60rem
+    }
+
 }
 
  

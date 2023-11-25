@@ -46,16 +46,19 @@
             </div>
          </div>
          <div class="apresentacao__contato__conteudo">
-            <form class="apresentacao__contato__conteudo__forms">
+            <form 
+            action="https://formsubmit.co/marcospadilhapires@gmail.com" 
+            method="POST" class="apresentacao__contato__conteudo__forms">
                <h2 class="apresentacao__contato__conteudo__forms__titulo">Envie-me uma mensagem🚀</h2>
-               <input type="text" placeholder="Nome Completo*" class="apresentacao__contato__conteudo__forms__input">
-               <input type="email" placeholder="Endereço de email*"class="apresentacao__contato__conteudo__forms__input">
-               <input type="text" placeholder="Assunto"class="apresentacao__contato__conteudo__forms__input">
+               <input type="text" name="name" placeholder="Nome Completo*" class="apresentacao__contato__conteudo__forms__input" required>
+               <input type="email" name="email" placeholder="Endereço de email*"class="apresentacao__contato__conteudo__forms__input"required>
+               <input type="text" placeholder="Assunto"class="apresentacao__contato__conteudo__forms__input"required>
                <div class="apresentacao__contato__conteudo__forms__msg">
                   <h3 class="apresentacao__contato__conteudo__subtitulo">Fale-me sobre seu projeto</h3>
-                  <textarea cols="30" rows="6"class="apresentacao__contato__conteudo__forms__input"></textarea>
-                  <button class="apresentacao__contato__conteudo__forms__botao">Enviar mensagem</button>
+                  <textarea cols="30" rows="6"class="apresentacao__contato__conteudo__forms__input" required></textarea>
+                  <button class="apresentacao__contato__conteudo__forms__botao" type="submit">Enviar mensagem</button>
                </div>
+               <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato!">
             </form>
          </div>
       </main>
